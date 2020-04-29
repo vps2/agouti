@@ -100,7 +100,8 @@ func (e *Element) Value(text string) error {
 	splitText := strings.Split(text, "")
 	request := struct {
 		Value []string `json:"value"`
-	}{splitText}
+		Text  string   `json:"text"`
+	}{splitText, text}
 	return e.Send("POST", "value", request, nil)
 }
 
