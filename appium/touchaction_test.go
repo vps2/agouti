@@ -1,6 +1,6 @@
 package appium_test
 
-import "github.com/sclevine/agouti/appium"
+import "github.com/vps2/agouti/appium"
 
 var _ = Describe("TouchAction", func() {
 	session := &mockMobileSession{}

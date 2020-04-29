@@ -3,7 +3,7 @@ package matchers_test
 import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	. "github.com/sclevine/agouti/internal/matchers"
+	. "github.com/vps2/agouti/internal/matchers"
 )
 
 var _ = Describe("#ExactlyEqual", func() {

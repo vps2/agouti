@@ -1,6 +1,6 @@
 package agouti
 
-import "github.com/sclevine/agouti/internal/target"
+import "github.com/vps2/agouti/internal/target"
 
 // A MultiSelection is a Selection that may be indexed using the At() method.
 // All Selection methods are available on a MultiSelection.

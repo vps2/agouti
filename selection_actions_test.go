@@ -6,11 +6,11 @@ import (
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	. "github.com/sclevine/agouti"
-	"github.com/sclevine/agouti/api"
-	"github.com/sclevine/agouti/internal/element"
-	. "github.com/sclevine/agouti/internal/matchers"
-	"github.com/sclevine/agouti/internal/mocks"
+	. "github.com/vps2/agouti"
+	"github.com/vps2/agouti/api"
+	"github.com/vps2/agouti/internal/element"
+	. "github.com/vps2/agouti/internal/matchers"
+	"github.com/vps2/agouti/internal/mocks"
 )
 
 var _ = Describe("Selection Actions", func() {

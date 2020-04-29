@@ -2,7 +2,7 @@ package matchers
 
 import (
 	"github.com/onsi/gomega/types"
-	"github.com/sclevine/agouti/matchers/internal"
+	"github.com/vps2/agouti/matchers/internal"
 )
 
 // HaveText passes when the expected text is equal to the actual element text.

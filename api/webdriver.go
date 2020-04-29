@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/sclevine/agouti/api/internal/service"
+	"github.com/vps2/agouti/api/internal/service"
 )
 
 type WebDriver struct {
