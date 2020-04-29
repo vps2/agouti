@@ -38,7 +38,7 @@ func (c *Client) Send(method, endpoint string, body interface{}, result interfac
 
 func bodyToJSON(body interface{}) ([]byte, error) {
 	if body == nil {
-		return nil, nil
+		return []byte("{}"), nil
 	}
 	bodyJSON, err := json.Marshal(body)
 	if err != nil {
