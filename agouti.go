@@ -121,3 +121,19 @@ func GeckoDriver(options ...Option) *WebDriver {
 	command := []string{binaryName, "--port={{.Port}}"}
 	return NewWebDriver("http://{{.Address}}", command, options...)
 }
+
+// OperaDriver returns an instance of a OperaDriver WebDriver.
+//
+// Provided Options will apply as default arguments for new pages.
+// New pages will accept invalid SSL certificates by default. This
+// may be disabled using the RejectInvalidSSL Option.
+func OperaDriver(options ...Option) *WebDriver {
+	var binaryName string
+	if runtime.GOOS == "windows" {
+		binaryName = "operadriver.exe"
+	} else {
+		binaryName = "operadriver"
+	}
+	command := []string{binaryName, "--port={{.Port}}"}
+	return NewWebDriver("http://{{.Address}}", command, options...)
+}
